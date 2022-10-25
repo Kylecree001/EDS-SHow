@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resent50_Segnet Model</title>
+
+  <style>
+    html {
+      background: black;
+      color: white
+    }
+
+    .title {
+      text-align: center;
+    }
+    
+    .testTitle {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    table {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    thead {
+      font-weight: bold;
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 50px;
+      justify-items: center;
+
+      grid-gap: 40px;
+    }
+
+    .backButtonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .backButton {
+      text-decoration: none;
+      font-size: 2em;
+      color: blue;
+    }
+
+
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="backButtonDiv">
+      <a class="backButton" href="javascript:history.back()">Back</a>
+    </div>
+    <h1 class="title">Resent50_Segnet Model With 50 Epochs Training</h1>
+    <table>
+      <thead>
+        <td></td>
+        <td>IoU Score</td>
+        <td>Percentage (%) (2sf)</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frequency Weighted</td>
+          <td>0.2185359979275428</td>
+          <td>21.85</td>
+        </tr>
+        <tr>
+          <td>Mean</td>
+          <td>0.11424688584940172</td>
+          <td>11.42</td>
+        </tr>
+        <tr>
+          <td>Cardboard</td>
+          <td>0.38378829</td>
+          <td>38.38</td>
+        </tr>
+        <tr>
+          <td>Glass</td>
+          <td>0.0083125</td>
+          <td>0.83</td>
+        </tr>
+        <tr>
+          <td>Metal</td>
+          <td>0.02862692</td>
+          <td>2.86</td>
+        </tr>
+        <tr>
+          <td>Paper</td>
+          <td>0.07616151</td>
+          <td>7.61</td>
+        </tr>
+        <tr>
+          <td>Plastic</td>
+          <td>0.09610298</td>
+          <td>9.61</td>
+        </tr>
+        <tr>
+          <td>Trash</td>
+          <td>0.09248911</td>
+          <td>9.25</td>
+        </tr>
+      </tbody>
+      
+    </table> 
+    <h2 class="testTitle">Test Images VS Predictions</h2>
+    <div class="container2">
+      <div>
+        <img src="/predictions/segnet_50/20221009_115011.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115011.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115101.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115101.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115227.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115227.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115343.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115343.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115351.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115351.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115405.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115405.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115451.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115451.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115501.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115501.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/segnet_50/20221009_115514.jpg" alt="">
+        <img src="/predictions/segnet_50/20221009_115514.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

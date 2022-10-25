@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDS Show</title>
+
+  <style>
+    html {
+      background: black;
+      color: white;
+    }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-gap: 30px;
+    }
+
+    .buttonBox {
+      width: 20vw;
+      height: 20vh;
+      background: pink;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+    }
+    .modelBox {
+      flex-direction: column;
+    }
+
+    .small-title {
+      font-size: 12px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .backButtonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .backButton {
+      text-decoration: none;
+      font-size: 2em;
+      color: blue;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+  <div class="backButtonDiv">
+    <a class="backButton" href="javascript:history.back()">Back</a>
+  </div>
+  <h1 class="title">Applications</h1>
+  <div class="container">
+    <ul>
+     <li> Detection can help determine what 
+      exactly the problem is, e.g. putting plastic 
+      that can not be recycled in the recycling 
+      bin</li>
+      <li>Information can be used to educate the 
+        public, reducing human errors in recycling</li>
+        <li>Could be used together with a mechanical 
+          mechanism to remove the rubbish as soon 
+          as detected.</li>
+          <li> A successfully high detection rate could 
+            open the path for different application of 
+            image segmentation, such as quality 
+            control defects on an assembly line</li>
+    </ul>
+  </div>
+  <div>
+    <p class="center-text">For More Detailed Look Here Is My <a href="/dissertation.html">Dissertation</a></p>
+  </div>
+</body>
+</html>

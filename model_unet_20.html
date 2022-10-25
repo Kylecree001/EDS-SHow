@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resent50_Unet Model</title>
+
+  <style>
+    html {
+      background: black;
+      color: white
+    }
+
+
+
+
+    .title {
+      text-align: center;
+    }
+    
+    .testTitle {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    table {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    thead {
+      font-weight: bold;
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 50px;
+      justify-items: center;
+
+      grid-gap: 40px;
+    }
+
+    .backButtonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .backButton {
+      text-decoration: none;
+      font-size: 2em;
+      color: blue;
+    }
+
+
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="backButtonDiv">
+      <a class="backButton" href="javascript:history.back()">Back</a>
+    </div>
+    <h1 class="title">Resent50_Unet Model With 20 Epochs Training</h1>
+    <table>
+      <thead>
+        <td></td>
+        <td>IoU Score</td>
+        <td>Percentage (%) (2sf)</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frequency Weighted</td>
+          <td>0.23493001544736786</td>
+          <td>23.49</td>
+        </tr>
+        <tr>
+          <td>Mean</td>
+          <td>0.11234225892084863</td>
+          <td>11.23</td>
+        </tr>
+        <tr>
+          <td>Cardboard</td>
+          <td>0.39521872</td>
+          <td>39.52</td>
+        </tr>
+        <tr>
+          <td>Glass</td>
+          <td>0.00804405</td>
+          <td>0.80</td>
+        </tr>
+        <tr>
+          <td>Metal</td>
+          <td>0.02180526</td>
+          <td>2.18</td>
+        </tr>
+        <tr>
+          <td>Paper</td>
+          <td>0.12864499</td>
+          <td>12.86</td>
+        </tr>
+        <tr>
+          <td>Plastic</td>
+          <td>0.06325351</td>
+          <td>6.33</td>
+        </tr>
+        <tr>
+          <td>Trash</td>
+          <td>0.05708703</td>
+          <td>5.71</td>
+        </tr>
+      </tbody>
+      
+    </table> 
+    <h2 class="testTitle">Test Images VS Predictions</h2>
+    <div class="container2">
+      <div>
+        <img src="/predictions/unet_20/20221009_115011.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115011.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115101.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115101.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115227.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115227.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115343.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115343.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115351.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115351.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115405.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115405.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115451.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115451.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115501.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115501.png" alt="">
+      </div>
+      <div>
+        <img src="/predictions/unet_20/20221009_115514.jpg" alt="">
+        <img src="/predictions/unet_20/20221009_115514.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

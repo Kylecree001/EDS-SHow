@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDS Show</title>
+
+  <style>
+    html {
+      background: black;
+      color: white;
+    }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-gap: 30px;
+    }
+
+    .buttonBox {
+      width: 20vw;
+      height: 20vh;
+      background: pink;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+    }
+    .modelBox {
+      flex-direction: column;
+    }
+
+    .small-title {
+      font-size: 12px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .backButtonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .backButton {
+      text-decoration: none;
+      font-size: 2em;
+      color: blue;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+  <div class="backButtonDiv">
+    <a class="backButton" href="javascript:history.back()">Back</a>
+  </div>
+  <h1 class="title">Findings</h1>
+  <div class="container">
+    <ul>
+      <li> Overall the accuracy of detection was 23-26%</li>
+      <li>Cardboard was the easiest to detect, with up to 
+        45% accuracy</li>
+        <li> Clear items such as plastic were hardest to detect 
+          with sometimes less than 1% accuracy</li>
+          <li>Several factors were identified to increase the 
+            accuracy, such as better training images</li>
+            <li>Image segmentation technique worked well</li>
+            <li> Good base for future research</li>
+    </ul>
+  </div>
+  <div>
+    <p class="center-text">For More Detailed Look Here Is My <a href="/dissertation.html">Dissertation</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+keras_segmentation evaluate_model --checkpoints_path /workspace/checkpoints/resnet50_unet_20_epochs/ --images_path /workspace/predictions-in --segs_path /workspace/predictions-in

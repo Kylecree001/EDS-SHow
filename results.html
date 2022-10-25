@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDS Show</title>
+
+  <style>
+    html {
+      background: black;
+      color: white;
+    }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      grid-gap: 30px;
+    }
+
+    .buttonBox {
+      width: 20vw;
+      height: 20vh;
+      background: orange;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+    }
+    .modelBox {
+      flex-direction: column;
+    }
+
+    .small-title {
+      font-size: 12px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .backButtonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .backButton {
+      text-decoration: none;
+      font-size: 2em;
+      color: blue;
+    }
+
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+  <div class="backButtonDiv">
+    <a class="backButton" href="javascript:history.back()">Back</a>
+  </div>
+  <h1 class="title">Results</h1>
+  <div class="container">
+    <a class="buttonBox" href="/model_unet_10.html">Resent50_Unet With 10 Epochs Training</a>
+    <a class="buttonBox" href="/model_unet_20.html">Resent50_Unet With 20 Epochs Training</a>
+    <a class="buttonBox" href="/model_unet_50.html">Resent50_Unet With 50 Epochs Training</a>
+    <a class="buttonBox" href="/model_segnet_10.html">Resent50_Segnet With 10 Epochs Training</a>
+    <a class="buttonBox" href="/model_segnet_20.html">Resent50_Segnet With 20 Epochs Training</a>
+    <a class="buttonBox" href="/model_segnet_50.html">Resent50_Segnet With 50 Epochs Training</a>
+  </div>
+</body>
+</html>
